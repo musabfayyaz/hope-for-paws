@@ -4,151 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hope for Paws - Home</title>
-
-    <!-- Google Fonts: Nunito -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Main JavaScript File -->
-    <script defer src="js/main.js"></script>
 </head>
 <body>
 
-    <!-- ======================= Header ======================= -->
-    <header class="header">
-        <nav class="navbar container">
+    <!-- Header -->
+    <div class="header">
+        <div class="navbar">
             <a href="index.html" class="logo">Hope for Paws</a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="adoption.html" class="nav-link">Adoption</a></li>
                 <li><a href="healthcare.html" class="nav-link">Healthcare</a></li>
-                <li><a href="products.html" class="nav-link">Products</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="about.html" class="nav-link">About & Contact</a></li>
             </ul>
-            <button class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <!-- ======================= Main Content ======================= -->
-    <main>
-        <!-- ======================= Hero Section ======================= -->
-        <section class="hero">
-            <div class="hero-content container">
-                <h1 class="hero-title">Find Your New Best Friend</h1>
-                <p class="hero-subtitle">We have hundreds of lovable pets waiting for a forever home. Your journey to unconditional love starts here.</p>
-                <div class="hero-buttons">
-                    <a href="adoption.html" class="btn btn-primary">Meet The Pets</a>
-                    <a href="#" class="btn btn-secondary">Donate Now</a>
-                </div>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Find Your New Best Friend</h1>
+        <p>We have hundreds of lovable pets waiting for a forever home.</p>
+        <a href="adoption.html" class="btn">Meet The Pets</a>
+    </div>
 
-        <!-- ======================= Featured Pets ======================= -->
-        <section class="featured-pets container section">
-            <h2 class="section-title">Meet Some Friends</h2>
-            <div class="pets-grid">
-                <!-- Pet Card 1 -->
-                <div class="pet-card">
-                    <div class="pet-card-img">
-                        <img src="https://placedog.net/400/400?id=1" alt="A friendly dog named Buddy">
-                    </div>
-                    <div class="pet-card-content">
-                        <h3>Buddy</h3>
-                        <p>Golden Retriever, 2 years</p>
-                        <a href="#" class="btn btn-outline">Adopt Me</a>
-                    </div>
-                </div>
-                <!-- Pet Card 2 -->
-                <div class="pet-card">
-                    <div class="pet-card-img">
-                        <img src="https://placekitten.com/400/400?image=2" alt="A cute cat named Luna">
-                    </div>
-                    <div class="pet-card-content">
-                        <h3>Luna</h3>
-                        <p>Domestic Shorthair, 1 year</p>
-                        <a href="#" class="btn btn-outline">Adopt Me</a>
-                    </div>
-                </div>
-                <!-- Pet Card 3 -->
-                <div class="pet-card">
-                    <div class="pet-card-img">
-                        <img src="https://placedog.net/400/400?id=3" alt="A playful dog named Rocky">
-                    </div>
-                    <div class="pet-card-content">
-                        <h3>Rocky</h3>
-                        <p>Beagle Mix, 3 years</p>
-                        <a href="#" class="btn btn-outline">Adopt Me</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Featured Pets -->
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px;">Meet Some Friends</h2>
         
-        <!-- ======================= Why Us Section ======================= -->
-        <section class="why-us section">
-            <div class="container">
-                <h2 class="section-title">Why Hope for Paws?</h2>
-                <div class="why-us-grid">
-                    <div class="feature-item">
-                        <i class="fas fa-heart-pulse"></i>
-                        <h3>Comprehensive Care</h3>
-                        <p>Every pet receives top-tier medical care, vaccinations, and love from day one.</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-home"></i>
-                        <h3>Perfect Matching</h3>
-                        <p>Our dedicated team works with you to find a pet that perfectly fits your lifestyle.</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-hand-holding-heart"></i>
-                        <h3>Lifetime Support</h3>
-                        <p>We provide resources and support to ensure a happy, healthy life for you and your new family member.</p>
-                    </div>
+        <div class="grid-3">
+            <!-- Pet 1 -->
+            <div class="card">
+                <img src="https://t4.ftcdn.net/jpg/02/90/84/47/360_F_290844781_V4hoIL3E291xvY5nEL7NCaWIoCIQxHfI.jpg" alt="Dog">
+                <div class="card-content">
+                    <h3>Buddy</h3>
+                    <p>Golden Retriever, 2 years</p>
+                    <a href="adoption.html" class="btn">Adopt Me</a>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <!-- ======================= Footer ======================= -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3>Hope for Paws</h3>
-                <p>Bringing joy to families, one paw at a time. Join our mission to find loving homes for every pet.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+            <!-- Pet 2 -->
+            <div class="card">
+                <img src="https://www.shutterstock.com/image-photo/happy-brown-adult-domestic-short-600nw-2659425815.jpg" alt="Cat">
+                <div class="card-content">
+                    <h3>Luna</h3>
+                    <p>Domestic Shorthair, 1 year</p>
+                    <a href="adoption.html" class="btn">Adopt Me</a>
                 </div>
             </div>
-            <div class="footer-col">
+
+            <!-- Pet 3 -->
+            <div class="card">
+                <img src="https://premiumpethouse.com/pph_petbasket/uploads/featuredimage/beagle-india-pph4.jpeg" alt="Dog">
+                <div class="card-content">
+                    <h3>Rocky</h3>
+                    <p>Beagle Mix, 3 years</p>
+                    <a href="adoption.html" class="btn">Adopt Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Us -->
+    <div style="background-color: #f2f2f2; padding: 60px 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Why Choose Us?</h2>
+            <div class="grid-3">
+                <div class="card" style="padding: 30px;">
+                    <i class="fas fa-heart"></i>
+                    <h3>We Care</h3>
+                    <p>Every pet receives love and medical care from day one.</p>
+                </div>
+                <div class="card" style="padding: 30px;">
+                    <i class="fas fa-home"></i>
+                    <h3>Perfect Match</h3>
+                    <p>We help you find the pet that fits your lifestyle perfectly.</p>
+                </div>
+                <div class="card" style="padding: 30px;">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Lifetime Support</h3>
+                    <p>We are here for you even after you take your pet home.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container grid-3">
+            <div>
+                <h3>Hope for Paws</h3>
+                <p>Bringing joy to families, one paw at a time.</p>
+            </div>
+            <div>
                 <h4>Quick Links</h4>
-                <ul>
+                <ul style="list-style: none; padding: 0;">
                     <li><a href="adoption.html">Adoption</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div>
                 <h4>Contact Us</h4>
-                <p>123 Charity Lane<br>Hopeville, HP 45678<br>Email: contact@hopeforpaws.org</p>
+                <p>123 Charity Lane, Hopeville</p>
+                <p>contact@hopeforpaws.org</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Hope for Paws. All Rights Reserved.</p>
         </div>
-    </footer>
+    </div>
 
 </body>
 </html>
